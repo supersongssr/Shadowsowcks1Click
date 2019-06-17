@@ -21,7 +21,7 @@ install_ssr(){
   	cd /root/
   	rm -rf libsodium-1.0.16.tar.gz
 	echo 'libsodium安装完成'
-  	git clone -b master https://github.com/maxzh0916/Shadowsowcks1Click.git && mv Shadowsowcks1Click shadowsocksr && cd shadowsocksr && chmod +x setup_cymysql.sh && chmod +x ./initcfg.sh && ./setup_cymysql.sh && ./initcfg.sh
+  	git clone -b master https://github.com/supersongssr/Shadowsowcks1Click.git && mv Shadowsowcks1Click shadowsocksr && cd shadowsocksr && chmod +x setup_cymysql.sh && chmod +x ./initcfg.sh && ./setup_cymysql.sh && ./initcfg.sh
 	rm -rf Shadowsowcks1Click.sh
 	echo 'ssr安装完成'
 	sed -i -e "s/ssapi/$ssapi/g" userapiconfig.py
